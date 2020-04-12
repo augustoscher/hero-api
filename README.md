@@ -75,3 +75,6 @@ Blue: Secret key, authentication info
 
 #### Deploy to heroku
 > git push heroku master
+
+#### Documentation
+https://as-hero-api.herokuapp.com/documentation
