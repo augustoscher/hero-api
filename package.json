@@ -8,7 +8,7 @@
     "test:coverage": "nyc --reporter=html mocha --timeout 10000 --exit src/test/*.test.js",
     "test:watch": "mocha src/test/*.test.js -w",
     "test:prod": "cross-env NODE_ENV=prod yarn test",
-    "postinstall": "yarn run test:coverage",
+    "postinstall": "cross-env NODE_ENV=prod yarn test",
     "prod": "cross-env NODE_ENV=prod pm2-runtime src/api.js"
   },
   "keywords": [],
