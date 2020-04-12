@@ -4,8 +4,7 @@
   "description": "HeroAPI",
   "main": "index.js",
   "scripts": {
-    "test": "nyc --reporter=html mocha --timeout 10000 src/test/*.test.js",
-    "test:coverage": "nyc --reporter=html mocha --timeout 10000 --exit src/test/*.test.js",
+    "test": "nyc --reporter=html mocha --timeout 10000 --exit src/test/*.test.js",
     "test:watch": "mocha src/test/*.test.js -w",
     "test:prod": "cross-env NODE_ENV=prod yarn test",
     "postinstall": "cross-env NODE_ENV=prod yarn test",
