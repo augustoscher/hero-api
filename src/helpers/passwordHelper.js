@@ -17,3 +17,10 @@ class PasswordHelper {
 }
 
 module.exports = PasswordHelper;
+
+// async function main() {
+//   const r = await PasswordHelper.hashPassword('your plain text password')
+//   console.log(r)
+// }
+
+// main();
